@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack",
-    "lint": "sh ./.ci-qc56d2.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi; eslint src/",
+    "lint": "eslint src/",
     "start": "node server.js",
     "test": "jest",
     "format": "prettier --write src/",
